@@ -1,6 +1,7 @@
 {
   "qurans": [{
     "original": true,
+    "code": "quran",
     "name": "القرآن الكريم",
     "direction": "rtl",
     "language": "ar-AR",
