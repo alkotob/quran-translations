@@ -1,0 +1,9 @@
+{
+  "qurans": [{
+    "original": true,
+    "name": "القرآن الكريم",
+    "direction": "rtl",
+    "language": "ar-AR",
+    "file": "data/Arabic-(Original-Book)-1.csv"
+  }]
+}
