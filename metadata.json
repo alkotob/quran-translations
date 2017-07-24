@@ -6,5 +6,17 @@
     "direction": "rtl",
     "language": "ar-AR",
     "file": "data/Arabic-(Original-Book)-1.csv"
+  }, {
+    "code": "qyusuf",
+    "name": "Quran",
+    "direction": "ltr",
+    "language": "en-US",
+    "file": "data/English-Yusuf-Ali-59.csv"
+  }, {
+    "code": "qbahasa",
+    "name": "Quran",
+    "direction": "ltr",
+    "language": "id-ID",
+    "file": "data/Indonesian-Bahasa-Indonesia-68.csv"
   }]
 }
