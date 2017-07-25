@@ -1,6 +1,3 @@
 # Quran Translations
 
-These translations were acquired from qurandatabase.org and tanzil.org. If you
-have an updated version please create a pull request. We downloaded the CSV
-files that are separated by a pipe ("|") instead of the comma, when parsing
-these files please specify the pipe character.
+This is a collection translations and original files provided by tanzil and qurandatabase.org. You will find a `metadata.json` file for parsing through the files in the `data` directory.
