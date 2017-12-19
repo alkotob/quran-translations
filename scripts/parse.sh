@@ -25,19 +25,15 @@ Dir.entries(dir).each do |filename|
   doc = Nokogiri::XML(File.open(file))
 
   # Parse metadata
-  meta = doc.css('HolyQuran').first
-  t_id = meta['TranslationID']
-  iso = meta['LanguageIsoCode'][0..1]
-  direction = meta['Direction']
-  original = t_id.to_i === 1
-  code = "q#{meta['LanguageIsoCode']}#{t_id}"
-  code = "quran" if original
-  name = meta['Writer']
-  name = "القرآن الكريم" if original
+  meta      = doc.css('collection').first
+  code      = meta['id']
+  iso       = meta['language']
+  direction = meta['direction']
+  original  = code === 'quran'
+  name      = meta['name']
 
   output[:data] << {
-    id: t_id.to_i,
-    code: code,
+    id: code,
     original: original,
     name: name,
     direction: direction,

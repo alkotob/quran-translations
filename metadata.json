@@ -1,40 +1,36 @@
 {
   "data": [
     {
-      "id": 1,
-      "code": "quran",
-      "original": true,
-      "name": "القرآن الكريم",
-      "direction": "rtl",
-      "language": "ar",
-      "file": "Arabic-(Original-Book)-1.xml"
-    },
-    {
-      "id": 59,
-      "code": "qeng59",
+      "id": "qeng59",
       "original": false,
       "name": "Yusuf Ali",
       "direction": "ltr",
       "language": "en",
-      "file": "English-Yusuf-Ali-59.xml"
+      "file": "qeng59.xml"
     },
     {
-      "id": 63,
-      "code": "qeng63",
+      "id": "qeng63",
       "original": false,
       "name": "Transliteration",
       "direction": "ltr",
       "language": "en",
-      "file": "English-Transliteration-63.xml"
+      "file": "qeng63.xml"
     },
     {
-      "id": 68,
-      "code": "qind68",
+      "id": "qind68",
       "original": false,
       "name": "Bahasa Indonesia",
       "direction": "ltr",
       "language": "in",
-      "file": "Indonesian-Bahasa-Indonesia-68.xml"
+      "file": "qind68.xml"
+    },
+    {
+      "id": "quran",
+      "original": true,
+      "name": "القرآن الكريم",
+      "direction": "rtl",
+      "language": "ar",
+      "file": "quran.xml"
     }
   ]
 }
