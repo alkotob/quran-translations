@@ -49,21 +49,23 @@ Dir.entries(dir).each do |filename|
     }
 
     xml.collection(q_meta) {
-      doc.css('Chapter').each do |chapter|
-        xml.chapter(id: chapter['ChapterID'], name: chapter['ChapterName']) {
-          xml.verses {
-            chapter.children.each do |verse|
-              next if verse.blank?
+      xml.chapters {
+        doc.css('Chapter').each do |chapter|
+          xml.chapter(id: chapter['ChapterID'], name: chapter['ChapterName']) {
+            xml.verses {
+              chapter.children.each do |verse|
+                next if verse.blank?
 
-              xml.verse(id: verse['VerseID']) {
-                xml.content {
-                  xml.cdata(verse.text)
+                xml.verse(id: verse['VerseID']) {
+                  xml.content {
+                    xml.cdata(verse.text)
+                  }
                 }
-              }
-            end
+              end
+            }
           }
-        }
-      end
+        end
+      }
     }
   end
 
